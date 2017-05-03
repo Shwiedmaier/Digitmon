@@ -1,0 +1,41 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+//package game;
+
+import static com.sun.org.apache.xalan.internal.lib.ExsltMath.exp;
+import static java.lang.Math.exp;
+import static java.lang.StrictMath.exp;
+import static jdk.nashorn.internal.objects.NativeMath.exp;
+
+/**
+ *
+ * @author swiedm1
+ */
+public class Hero {
+    public int exp = 0;
+    public String name = "temp";
+    public int level = 0;
+    
+   
+    public Hero(String temp){
+        name = temp;
+    }
+    
+    public String getName(){
+        return name;
+    }   
+    public int getLevel(){
+       int leveltemp = exp/10;
+       return leveltemp; 
+    }
+    public int setExp(int total){
+        exp=total+exp;
+        return exp;
+    }    
+    public int getExp(){
+        return exp;
+    }
+}
